@@ -8,6 +8,7 @@ import Handymen from "./pages/Handymen";
 import Customers from "./pages/Customers";
 import EarlyAccess from "./pages/EarlyAccess";
 import HandymenEarlyAccess from "./pages/HandymenEarlyAccess";
+import HowItWorks from "./pages/HowItWorks";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/customers" element={<Customers />} />
           <Route path="/early-access" element={<EarlyAccess />} />
           <Route path="/handymen/early-access" element={<HandymenEarlyAccess />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

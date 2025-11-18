@@ -10,15 +10,16 @@ export const Navbar = () => {
     <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-background/80 border-b border-border">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-3">
-          <div className="text-2xl font-bold">
-            <span className="text-secondary">Ace</span>
-            <span className="text-primary-foreground">Link</span>
-          </div>
+          <img 
+            src="https://i.imgur.com/fJHln67.png" 
+            alt="AceLink Logo"
+            className="h-20 w-auto object-contain transition-transform duration-500 hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(216,114,42,0.8)]" 
+          />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
           <Link 
-            to="/#how-it-works" 
+            to="/how-it-works" 
             className="text-foreground hover:text-secondary transition-colors font-medium"
           >
             How It Works
@@ -53,7 +54,7 @@ export const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <nav className="flex flex-col space-y-4 px-6 py-4">
-            <Link to="/#how-it-works" className="text-foreground hover:text-secondary">
+            <Link to="/how-it-works" className="text-foreground hover:text-secondary">
               How It Works
             </Link>
             <Link to="/handymen" className="text-foreground hover:text-secondary">
